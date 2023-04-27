@@ -179,6 +179,7 @@ header nav ul li {
     top: 0px;
     box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.05);
     background-color: #ffffff;
+    z-index: 23;
 }
 
 .nav-btn {
@@ -194,9 +195,17 @@ header nav ul li {
 
 .border {
     border: 1px solid #9CA1BE;
-    width: 100%;
-    height: 70px;
+    width: 1319px;
+    /* height: 70px; */
     border-radius: 100px;
+    padding: 7px;
+}
+
+.svg-border {
+    border: 2px solid #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
 }
 
 .comment-border {
@@ -224,11 +233,6 @@ header nav ul li {
 .p-relative {
     position: relative;
 }
-
-/* .p-absolute {
-    position: absolute;
-    left: 0;
-} */
 
 .mt-50 {
     margin-top: 50px;
@@ -291,6 +295,13 @@ header nav ul li {
 
 .space-between {
     justify-content: space-between;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fs-30 {
@@ -442,7 +453,13 @@ footer ul li {
     margin-bottom: 12px;
 }
 
+.pb-25 {
+    padding-bottom: 25px;
+}
 
+.z-index {
+    z-index: 0;
+}
 
 
 
@@ -497,6 +514,21 @@ footer ul li {
         grid-column: 1/2;
         grid-row: 7/8;
     }
+
+    .mr-sm-0 {
+        margin-right: 0px;
+    }
+
+    .flex-col {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .mb-sm-15 {
+        margin-bottom: 15px;
+    }
+
 }
 
 @media (min-width:577px) {
@@ -596,7 +628,7 @@ footer ul li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        z-index: 3;
+        z-index: 4;
         position: relative;
     }
 
@@ -614,10 +646,10 @@ footer ul li {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        z-index: 2;
+        z-index: 3;
         opacity: 0;
         pointer-events: none;
-        background-color: white;
+        background-color: #B2B2B2;
         top: 0%;
         left: 0%;
     }
@@ -687,5 +719,9 @@ footer ul li {
 @media (max-width:1320px) {
     .mb-md-15 {
         margin-bottom: 15px;
+    }
+
+    .width-100 {
+        width: 100%;
     }
 }
